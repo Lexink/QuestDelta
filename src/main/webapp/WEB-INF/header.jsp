@@ -4,6 +4,8 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <c:set var="root" value="${pageContext.request.contextPath}"/>
+        <c:set var="staticRoot" value="${pageContext.request.contextPath}/static"/>
         <title>Quest</title>
         <script src=https://code.jquery.com/jquery-3.6.0.min.js></script>
 
@@ -13,18 +15,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 
         <!-- CSS only -->
-        <link href="../css/normalize.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/font-awesome.min.css"/>
-        <link rel="icon" href="../icons/favicon.png" type="image/png">
-        <link href="../css/myStyle.css" rel="stylesheet">
+        <link href="${staticRoot}/css/normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="${staticRoot}/css/font-awesome.min.css"/>
+        <link rel="icon" href="${staticRoot}/icons/favicon.png" type="image/png">
+        <link href="${staticRoot}/css/myStyle.css" rel="stylesheet">
 
      </head>
      <body>
         <div class="lex-container app-header">
             <header class="lex-header">
-                 <a href="/" class="lex-logo">
+                 <a href="${pageContext.request.contextPath}/" class="lex-logo">
                      <div class="lex-logo-wrap">
-                         <img src="../icons/favicon.png" alt="Lex-logo" class="lex-logo-img">
+                         <img src="${staticRoot}/icons/favicon.png" alt="Lex-logo" class="lex-logo-img">
                          <div class="lex-logo-text">КВЕСТЫ</div>
                      </div>
 

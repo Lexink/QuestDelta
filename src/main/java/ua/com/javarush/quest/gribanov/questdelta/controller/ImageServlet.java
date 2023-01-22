@@ -38,7 +38,7 @@ public class ImageServlet extends HttpServlet {
         if (requestURI.contains("user_images")) {
             UserService userService = UserService.get();
             userService.updateAvatar(req);
-            resp.sendRedirect(AppURL.USER_URL);
+            resp.sendRedirect(req.getContextPath() + AppURL.USER_URL);
         }
     }
 

@@ -4,7 +4,7 @@
 
 <div class="app-body">
     <audio autoplay loop >
-        <source src="../audio/mystic-audio.mp3" type="audio/mpeg" >
+        <source src="${staticRoot}/audio/mystic-audio.mp3" type="audio/mpeg" >
     </audio>
     <div class="lex-bulb-bg">
         <div class="bulb1"></div>

@@ -141,8 +141,11 @@
 </div> <!-- cd-user-modal -->
 
         <!-- JavaScript  -->
-        <script src="../js/aeroplane.js"></script>
-        <script src="../js/three.js"></script>
-        <script src="../js/myScript.js"></script>
+        <script type="text/javascript">
+            let siteRoot = '${root}';
+        </script>
+        <script src="${staticRoot}/js/aeroplane.js"></script>
+        <script src="${staticRoot}/js/three.js"></script>
+        <script src="${staticRoot}/js/myScript.js"></script>
     </body>
 </html>

@@ -12,7 +12,7 @@
                 <form class="lex-profile-image-form" enctype=multipart/form-data method="post"
                       action="${pageContext.request.contextPath}/user_images?userId=${sessionScope.user.id}">
                     <div class="lex-profile-image-wrapper">
-                        <img id="lex-profile-image" class="lex-profile-image" src="/user_images/${sessionScope.user.avatar}" alt="no image found">
+                        <img id="lex-profile-image" class="lex-profile-image" src="${pageContext.request.contextPath}/user_images/${sessionScope.user.avatar}" alt="no image found">
                     </div>
                     <div class="edit-user-image-wrap">
                         <button id="edit-user-image-btn" class="edit-user-image-btn" type="button">

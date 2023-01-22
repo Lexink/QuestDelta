@@ -254,7 +254,7 @@ function createInput(currentValue, tdName){
     return input;
 }
 $('#cancel-edit-btn').on('click', ()=>{
-    window.location.href="/user"
+    window.location.href=siteRoot + "/user"
 })
 function loginSubmit(loginForm){
     $.ajax({
@@ -262,7 +262,7 @@ function loginSubmit(loginForm){
         url: 'login',
         data: $(loginForm).serialize(),
         success: () => {
-            window.location.href="/home"
+            window.location.href=siteRoot + "/home"
             console.log('success login')
         },
         error: () => {
@@ -277,7 +277,7 @@ function signUpSubmit(signUpForm){
         url: 'user',
         data: $(signUpForm).serialize(),
         success: () => {
-            window.location.href="/user"
+            window.location.href=siteRoot + "/user"
             console.log('success create')
         },
         error: () => {
@@ -292,7 +292,7 @@ $('#loginForm').submit(function (event) {
         url: 'login',
         data: $('#loginForm').serialize(),
         success: () => {
-            window.location.href="/home"
+            window.location.href=siteRoot + "/home"
             console.log('success login')
         },
         error: () => {
@@ -310,7 +310,7 @@ function updateUsers(uri, id){
         url: `${uri}`,
         data: {role: $(`#user-role-${id}`).val()},
         success: () => {
-            window.location.href="/users"
+            window.location.href=siteRoot +"/users"
             console.log('success update')
         }
     });
@@ -321,7 +321,7 @@ function deleteUsers(uri){
         url: `${uri}`,
         type: 'POST',
         success: function() {
-            window.location.href="/users"
+            window.location.href=siteRoot + "/users"
             console.log('success delete')
         }
     });
